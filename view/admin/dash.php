@@ -1,333 +1,274 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="../../css/style.css">
-  <title>Dashboard Admin</title>
-</head>
+<!-- Created by CodingLab |www.youtube.com/CodingLabYT-->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <!-- Boxiocns CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Font: Source Sans Pro -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../../vendor/adminlte/plugins/fontawesome-free/css/all.min.css">
+    <!-- DataTables -->
+    <link rel="stylesheet" href="../../vendor/adminlte/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="../../vendor/adminlte/plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+    <link rel="stylesheet" href="../../vendor/adminlte/plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
+    <!-- Theme style -->
+    <!-- <link rel="stylesheet" href="../../vendor/adminlte/dist/css/adminlte.min.css"> -->
+    <!--<title> Drop Down Sidebar Menu | CodingLab </title>-->
+    <link rel="stylesheet" href="../../css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+   </head>
 <body>
-  <!-- Dash Navbar Top -->
-  <nav class="navbar navbar-light bg-faded navbar-static-top dash-navbar-top nb-visible">
-    <button class="nb-btn-toggle">
-            <span class="fa fa-bars"></span>
-    </button>
-  </nav>
-  
-      <!-- Dash Navbar Left -->
-      <div class="dash-navbar-left nb-visible">
-        <a class="navbar-brand" href="#">Dashboard Admin</a>
-  
-        <p class="nb-nav-title">Home</p>
-        <ul class="nb-nav">
-          <li>
-            <a class="collapsed" data-toggle="collapse" href="#collapseStatistics" aria-expanded="false" aria-controls="collapseStatistics">
-              <span class="glyphicon glyphicon-stats nb-link-icon"></span>
-              <span class="nb-link-text">Statistics</span>
-              <span class="fa fa-angle-up nb-btn-sub-collapse"></span>
-            </a>
-            <!-- Dropdown level one -->
-            <ul class="nb-sub-one collapse" id="collapseStatistics">
-              <li>
-                <a href="#">
-                  <span class="fa fa-clock-o nb-link-icon"></span>
-                  <span class="nb-link-text">Daily</span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <span class="fa fa-history nb-link-icon"></span>
-                  <span class="nb-link-text">Annual</span>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="#active">
-            <a href="#">
-              <span class="glyphicon glyphicon-folder-open nb-link-icon"></span>
-              <span class="nb-link-text">Pages</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <span class="glyphicon glyphicon-comment nb-link-icon"></span>
-              <span class="nb-link-text">Comments</span>
-              <span class="badge">4</span>
-            </a>
-          </li>
-          <li>
-            <a class="collapsed" data-toggle="collapse" href="#collapseLevelOne" aria-expanded="false" aria-controls="collapseLevelOne">
-              <span class="fa fa-sort-amount-desc nb-link-icon"></span>
-              <span class="nb-link-text">Dropdown level 1</span>
-              <span class="fa fa-angle-up nb-btn-sub-collapse"></span>
-            </a>
-            <!-- Dropdown level one -->
-            <ul class="nb-sub-one collapse" id="collapseLevelOne">
-              <li>
-                <a href="#">
-                  <span class="fa fa-slack nb-link-icon"></span>
-                  <span class="nb-link-text">Level 1</span>
-                </a>
-              </li>
-              <li>
-                <a class="collapsed" data-toggle="collapse" href="#collapseLevelTwo" aria-expanded="false" aria-controls="collapseLevelTwo">
-                  <span class="fa fa-level-down nb-link-icon"></span>
-                  <span class="nb-link-text">Dropdown level 2</span>
-                  <span class="fa fa-angle-up nb-btn-sub-collapse"></span>
-                </a>
-                <!-- Dropdown level two -->
-                <ul class="nb-sub-two collapse" id="collapseLevelTwo">
-                  <li>
-                    <a href="#">
-                      <span class="fa fa-wifi nb-link-icon"></span>
-                      <span class="nb-link-text">Level 2</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <span class="fa fa-wifi nb-link-icon"></span>
-                      <span class="nb-link-text">Level 2</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <span class="fa fa-wifi nb-link-icon"></span>
-                      <span class="nb-link-text">Level 2</span>
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a href="#">
-                  <span class="fa fa-slack nb-link-icon"></span>
-                  <span class="nb-link-text">Level 1</span>
-                </a>
-              </li>
-            </ul>
-          </li>
+  <div class="sidebar close">
+    <div class="logo-details">
+      <i class='bx bxl-python'></i>
+      <span class="logo_name">Admin</span>
+    </div>
+    <ul class="nav-links">
+      <li>
+        <a href="#">
+        <i class='bx bx-user'></i>
+          <span class="link_name">User</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">User</a></li>
         </ul>
-        <p class="nb-nav-title">Filter</p>
-        <ul class="nb-nav">
-          <li>
-            <a href="#">
-              <span class="fa fa-image nb-link-icon"></span>
-              <span class="nb-link-text">Image</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <span class="fa fa-video-camera nb-link-icon"></span>
-              <span class="nb-link-text">Video</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <span class="glyphicon glyphicon-folder-open nb-link-icon"></span>
-              <span class="nb-link-text">Audio</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <span class="fa fa-file-text nb-link-icon"></span>
-              <span class="nb-link-text">File</span>
-              <span class="badge">4</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <span class="fa fa-link nb-link-icon"></span>
-              <span class="nb-link-text">Active link</span>
-            </a>
-          </li>
+      </li>
+      <!-- <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-collection' ></i>
+            <span class="link_name"></span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Category</a></li>
+          <li><a href="#">HTML & CSS</a></li>
+          <li><a href="#">JavaScript</a></li>
+          <li><a href="#">PHP & MySQL</a></li>
         </ul>
-        <p class="nb-nav-title">Category</p>
-        <ul class="nb-nav">
-          <li>
-            <a class="collapsed" data-toggle="collapse" href="#collapseCategoryAll" aria-expanded="false" aria-controls="collapseCategoryAll">
-              <span class="glyphicon glyphicon-tags nb-link-icon"></span>
-              <span class="nb-link-text">All</span>
-              <span class="fa fa-angle-up nb-btn-sub-collapse"></span>
-            </a>
-            <!-- Dropdown level one -->
-            <ul class="nb-sub-one collapse" id="collapseCategoryAll">
-              <li>
-                <a href="#">
-                  <span class="fa fa-dot-circle-o nb-link-icon"></span>
-                  <span class="nb-link-text">UI</span>
-                  <span class="badge">4</span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <span class="fa fa-dot-circle-o nb-link-icon"></span>
-                  <span class="nb-link-text">Design</span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <span class="fa fa-dot-circle-o nb-link-icon"></span>
-                  <span class="nb-link-text">App</span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <span class="fa fa-dot-circle-o nb-link-icon"></span>
-                  <span class="nb-link-text">Homepage</span>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">
-              <span class="fa fa-dot-circle-o nb-link-icon"></span>
-              <span class="nb-link-text">Popular</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <span class="fa fa-dot-circle-o nb-link-icon"></span>
-              <span class="nb-link-text">Handpicked</span>
-            </a>
-          </li>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-book-alt' ></i>
+            <span class="link_name">Posts</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Posts</a></li>
+          <li><a href="#">Web Design</a></li>
+          <li><a href="#">Login Form</a></li>
+          <li><a href="#">Card Design</a></li>
         </ul>
-      </div> <!-- /.dash-navbar-left -->
-  
-  
-      <!-- <div class="content-wrap nb-visible" data-effect="nb-push"> -->
-        <!-- <div class="container-fluid"> -->
-          <!-- <div class="row"> -->
-           <!-- Your content here -->
-           <!-- <div class="dummy-div" style="height:1500px;"> -->
-           <!-- </div> -->
-           <!-- End of your content -->
-          <!-- </div> -->
-        <!-- </div> -->
-      <!-- </div>  -->
-      <!-- /.content-wrap -->
-      <script>
-(function(){
-  "use strict";
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-pie-chart-alt-2' ></i>
+          <span class="link_name">Analytics</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Analytics</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-line-chart' ></i>
+          <span class="link_name">Chart</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Chart</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-plug' ></i>
+            <span class="link_name">Plugins</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Plugins</a></li>
+          <li><a href="#">UI Face</a></li>
+          <li><a href="#">Pigments</a></li>
+          <li><a href="#">Box Icons</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-compass' ></i>
+          <span class="link_name">Explore</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Explore</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-history'></i>
+          <span class="link_name">History</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">History</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-cog' ></i>
+          <span class="link_name">Setting</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Setting</a></li>
+        </ul>
+      </li> -->
+      <li>
+        <a href="#">
+          <i class='bx bx-log-out'></i>
+          <span class="link_name">LogOut</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">LogOut</a></li>
+        </ul>
+      </li>
+  </ul>
+  </div>
 
-  // Navbar left
-  // -------------------------------------------------
+<?php
+// fetching data
+include '../../database/koneksi.php';
+$query = "SELECT * FROM user";
+$result = mysqli_query($koneksi, $query);
+?>
+  <section class="home-section">
+    <div class="home-content">
+      <i class='bx bx-menu' ></i>
+      <span class="text">Gymfit Exercise</span>
+    </div>
 
-    // Variables
-      var nb                = $(".dash-navbar-left"),
-          nbBtnToggle       = $(".nb-btn-toggle"),
-          nbBtnCollapse     = $(".nb-btn-collapse"),
-          contentWrap        = $(".content-wrap"),
-          contentWrapEffect  = contentWrap.data("effect"),
-          windowHeight       = $(window).height() - 61,
-          windowWidth        = $(window).width() < 767;
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="card">
+              <!-- /.card-header -->
+              <div class="card-body">
+                <table id="example2" class="table table-bordered table-hover">
+                  <thead>
+                  <tr>
+                    <th>ID</th>
+                    <th>Email</th>
+                    <th>Username</th>
+                    <th>FullName</th>
+                    <th>No Hp</th>
+                    <th>Password</th>
+                    <th>Aksi</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                    <?php while ($d = mysqli_fetch_array($result)) {?>
+                      <tr>
+                        <td><?= $d['id']; ?></td>
+                        <td><?= $d['email']; ?></td>
+                        <td><?= $d['username']; ?></td>
+                        <td><?= $d['fullname']; ?></td>
+                        <td><?= $d['no_hp']; ?></td>
+                        <td><?= $d['password']; ?></td>
+                        <td>
+                          <a href="#?id=<?= $d['id']; ?>" class="d-inline btn btn-primary m-1 col-md-5 ">Hapus</a>
+                          <a href="#?id=<?= $d['id']; ?>"class="d-inline btn btn-primary m-1 col-md-5 ">Edit</a>
+                        </td>
+                      </tr>
+                    <?php } ?>
+                  </tbody>
+                  <tfoot>
+                  <tr>
+                    <th>ID</th>
+                    <th>Email</th>
+                    <th>Username</th>
+                    <th>FullName</th>
+                    <th>No Hp</th>
+                    <th>Password</th>
+                    <th>Aksi</th>
+                  </tr>
+                  </tfoot>
+                </table>
+              </div>
+              <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+          </div>
+          <!-- /.col -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
 
-    // Functions
-      function cwShowOverflow() {
-        if ( windowWidth ) {
-            contentWrap.css({
-            height : windowHeight ,
-            overflow : 'hidden'
+<!-- jQuery -->
+<script src="../../vendor/adminlte/plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="../../vendor/adminlte/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- DataTables  & vendor/adminlte/Plugins -->
+<script src="../../vendor/adminlte/plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="../../vendor/adminlte/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+<script src="../../vendor/adminlte/plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+<script src="../../vendor/adminlte/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+<script src="../../vendor/adminlte/plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
+<script src="../../vendor/adminlte/plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
+<script src="../../vendor/adminlte/plugins/jszip/jszip.min.js"></script>
+<script src="../../vendor/adminlte/plugins/pdfmake/pdfmake.min.js"></script>
+<script src="../../vendor/adminlte/plugins/pdfmake/vfs_fonts.js"></script>
+<script src="../../vendor/adminlte/plugins/datatables-buttons/js/buttons.html5.min.js"></script>
+<script src="../../vendor/adminlte/plugins/datatables-buttons/js/buttons.print.min.js"></script>
+<script src="../../vendor/adminlte/plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
+<!-- AdminLTE App -->
+<script src="../../vendor/adminlte/dist/js/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+
+<!-- Page specific script -->
+<script>
+  $(function () {
+    $("#example1").DataTable({
+      "responsive": true, "lengthChange": false, "autoWidth": false,
+      "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
+    }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
+    $('#example2').DataTable({
+      "paging": true,
+      "lengthChange": false,
+      "searching": false,
+      "ordering": true,
+      "info": true,
+      "autoWidth": false,
+      "responsive": true,
+    });
+  });
+</script>
+    <!-- ./datatable -->
+  </section>
+  <!-- jQuery -->
+    <script>
+      let arrow = document.querySelectorAll(".arrow");
+        for (var i = 0; i < arrow.length; i++) {
+          arrow[i].addEventListener("click", (e)=>{
+        let arrowParent = e.target.parentElement.parentElement;//selecting main parent of arrow
+        arrowParent.classList.toggle("showMenu");
           });
-          $( 'html, body' ).css( 'overflow', 'hidden' );
         }
-      }
-
-      function cwHideOverflow() {
-        if ( windowWidth ) {
-          contentWrap.css({
-            height : 'auto' ,
-            overflow : 'auto'
+          let sidebar = document.querySelector(".sidebar");
+          let sidebarBtn = document.querySelector(".bx-menu");
+          console.log(sidebarBtn);
+          sidebarBtn.addEventListener("click", ()=>{
+            sidebar.classList.toggle("close");
           });
-          $( 'html, body' ).css( 'overflow', 'auto' );
-        }
-      }
-
-      function nbShow() {
-        nb.addClass("nb-show").removeClass("nb-hide");
-        contentWrap.addClass(contentWrapEffect);
-        cwShowOverflow();
-        nbBtnToggle.find("span").removeClass("fa-bars").addClass("fa-arrow-left");
-      }
-
-      function nbHide() {
-        nb.removeClass("nb-show").addClass("nb-hide");
-        contentWrap.removeClass(contentWrapEffect);
-        cwHideOverflow();
-        nbBtnToggle.find("span").removeClass("fa-arrow-left").addClass("fa-bars");
-      }
-
-    // Toggle the edge navbar left
-      nb.addClass("nb-hide");
-      nbBtnToggle.click( function() {
-        if( nb.hasClass("nb-hide") ) {
-          nbShow();
-        } else {
-          nbHide();
-        }
-      });
-
-    // Collapse the dash navbar left subnav
-      nbBtnCollapse.click( function(e) {
-        e.preventDefault();
-        if( nb.hasClass("nb-collapsed") ) {
-          nb.removeClass("nb-collapsed");
-          contentWrap.removeClass("nb-collapsed");
-          $(this).find(".nb-link-icon").removeClass("fa-arrow-right").addClass("fa-arrow-left");
-        } else {
-          nb.addClass("nb-collapsed");
-          contentWrap.addClass("nb-collapsed");
-          $(this).find(".nb-link-icon").removeClass("fa-arrow-left").addClass("fa-arrow-right");
-        }
-      });
-
-    // Close left navbar when top navbar opens
-      $( '.navbar-toggle' ).click( function() {
-        if ( $( this ).hasClass( 'collapsed' ) ) {
-          nbHide();
-        }
-      });
-
-    // Close top navbar when left navbar opens
-      nbBtnToggle.click( function() {
-        $( '.navbar-toggle' ).addClass( 'collapsed' );
-        $( '.navbar-collapse' ).removeClass( 'in' );
-      });
-
-    // Code credit: https://tr.im/CZzf4
-      function isMobile() {
-        try { document.createEvent("TouchEvent"); return true; }
-        catch(e){ return false; }
-      }
-
-    // Swipe the navbar
-      if ( isMobile() == true ) {
-        $(window).swipe( {
-          swipeRight:function() {
-            nbShow();
-            $( '.navbar-collapse' ).removeClass( 'in' );
-          },
-          swipeLeft:function() {
-            nbHide();
-          },
-          threshold: 75
-        });
-      }
-
-    // Collapse navbar on content click
-      $( '.content-wrap' ).click( function() {
-        nbHide();
-      });
-
-    // Auto collapse other opens subnavs
-      /*$(".nb-nav > li > a").click( function() {
-        $( document ).find( 'ul .in' ).collapse( 'hide' );
-      });*/
-
-})();
-      </script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+    </script>
 </body>
 </html>
