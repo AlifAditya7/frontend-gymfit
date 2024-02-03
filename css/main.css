@@ -34,7 +34,7 @@
 	box-sizing: border-box;
 }
 
-body, html {
+body {
 	height: 100%;
 	font-family: Poppins-Regular, sans-serif;
 }
@@ -167,7 +167,7 @@ iframe {
   justify-content: center;
   align-items: center;
   padding: 15px;
-  background-image: url(bg.avif);
+  background-image: url(../images/bg\ gym.jpg);
   background-repeat: no-repeat; /* Prevent background image from repeating */
   background-size: cover; /* Cover the entire container with the background image */
 
@@ -214,7 +214,7 @@ iframe {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 177px 130px 33px 95px;
+  padding: 0px 130px 33px 95px;
 }
 
 /*------------------------------------------------------------------
